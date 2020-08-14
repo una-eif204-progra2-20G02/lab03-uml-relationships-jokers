@@ -19,8 +19,8 @@ int main() {
     PlanSebas->ingresarAlFinal(Acetaminofen);
     PlanGerson->ingresarAlFinal(Vitaminas);
     PlanGerson->ingresarAlFinal(Panadol);
-    cout << Sebas->getMedicamentosLista() << endl;
-    cout << Gerson->getMedicamentosLista() << endl;
+    cout << Sebas->ToString() << endl;
+    cout << Gerson->ToString() << endl;
     delete PlanSebas;
     delete PlanSebas;
     return 0;

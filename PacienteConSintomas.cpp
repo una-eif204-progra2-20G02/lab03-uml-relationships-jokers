@@ -32,10 +32,10 @@ string PacienteConSintomas::ToString() {
     stringstream s;
     s << "Nombre del paciente: " << getNombre() << " " << getApellido() << endl;
     s << "Edad del Pacienta: " << getEdad() << endl;
-    s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << "de este anno" << endl;
+    s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << " de este anno" << endl;
     s << "Hospital: " << getHospital() << endl;
     s << "Sintomas: " << getSintomas() << endl;
-    s << "Plan de Alimentacion: " << endl;
+    // s << "Plan de tratamiento: " << getMedicamentosLista()<<endl;
     return s.str();
 }
 
