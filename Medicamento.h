@@ -22,20 +22,27 @@ private:
 
 public:
 
-    Medicamento();
     Medicamento(const string nombreMedicamento, const double dosis, const int precio, const double nivelEfectividad, const int annioVencimiento);
     ~Medicamento();
-    string getNombreMedicamento();
-    void setNombreMedicamento(string nombreMedicamento);
-    double getDosis();
-    void setDosis(double dosis);
-    int getPrecio();
+
+    const string &getNombreMedicamento() const;
+
+    void setNombreMedicamento(const string &nombreMedicamento);
+
+    int getPrecio() const;
     void setPrecio(int precio);
-    double getNivelEfectividad();
+    double getDosis() const;
+    void setDosis(double dosis);
+    double getNivelEfectividad() const;
+
     void setNivelEfectividad(double nivelEfectividad);
-    int getAnnioVencimiento();
+
+    int getAnnioVencimiento() const;
+
     void setAnnioVencimiento(int annioVencimiento);
+
     string toString();
+
 
 };
 
