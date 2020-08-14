@@ -34,7 +34,8 @@ string PacienteAsintomatico::ToString() {
     s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << " de este anno" << endl;
     s << "Hospital: " << getHospital() << endl;
     s << "Estado Pulmonar: " << getEstadoPulmonar() << endl;
-    // s << "Plan de tratamiento: " << getMedicamentosLista()<<endl;
+    s << "Plan de tratamiento: ";
+    s << getMedicamentosLista() << endl;
     return s.str();
 }
 

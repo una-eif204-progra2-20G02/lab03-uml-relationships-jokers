@@ -21,13 +21,17 @@ void Tratamiento::ingresarAlFinal(Medicamento medicina) {
     MedicamentoLista.push_back(medicina);
 }
 
+int Tratamiento::getTamanno() {
+    return MedicamentoLista.size();
+}
+
 string Tratamiento::toString() {
     stringstream s;
-    for (int i = 0; i < MedicamentoLista.size(); i++) {
+    int i;
+    for (auto i = 0; i < getTamanno(); i++) {
         s << MedicamentoLista.at(i).toString() << endl;
-        return s.str();
     }
-
+    return s.str();
 }
 
 Tratamiento::~Tratamiento() {}

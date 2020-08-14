@@ -6,7 +6,7 @@
 
 PacienteConCovid19::PacienteConCovid19() {
     tratamiento = new Tratamiento();
-};
+}
 
 PacienteConCovid19::PacienteConCovid19(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,
                                        string hospital) {
@@ -18,7 +18,7 @@ PacienteConCovid19::PacienteConCovid19(int diaDeContagio, int mesDeContagio, int
     this->hospital = hospital;
     tratamiento = new Tratamiento();
 
-};
+}
 
 int PacienteConCovid19::getDiaDeContagio() { return diaDeContagio; }
 
@@ -29,6 +29,10 @@ int PacienteConCovid19::getEdad() { return edad; }
 void PacienteConCovid19::setEdad(int edad) { this->edad = edad; }
 
 int PacienteConCovid19::getMesDeContagio() { return mesDeContagio; }
+
+string PacienteConCovid19::getMedicamentosLista() {
+    return tratamiento->toString();
+}
 
 void PacienteConCovid19::setMesDeContagio(int mes) { mesDeContagio = mes; }
 

@@ -21,7 +21,6 @@ int main() {
     PlanGerson->ingresarAlFinal(Panadol);
     cout << Sebas->ToString() << endl;
     cout << Gerson->ToString() << endl;
-    delete PlanSebas;
-    delete PlanSebas;
+
     return 0;
 }

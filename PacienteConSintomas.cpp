@@ -35,7 +35,7 @@ string PacienteConSintomas::ToString() {
     s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << " de este anno" << endl;
     s << "Hospital: " << getHospital() << endl;
     s << "Sintomas: " << getSintomas() << endl;
-    // s << "Plan de tratamiento: " << getMedicamentosLista()<<endl;
+    s << "Plan de tratamiento: " << getMedicamentosLista() << endl;
     return s.str();
 }
 

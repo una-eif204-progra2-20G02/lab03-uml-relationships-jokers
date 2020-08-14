@@ -16,6 +16,8 @@ public:
 
     void setDiasDeTratamiento(int dias);
 
+    int getTamanno();
+
     void ingresarAlFinal(Medicamento medicina);
 
     string toString();
