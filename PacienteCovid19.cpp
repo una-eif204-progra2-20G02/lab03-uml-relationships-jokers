@@ -4,9 +4,9 @@
 
 #include "PacienteCovid19.h"
 
-PacienteConCovid19() {};
+PacienteConCovid19::PacienteConCovid19() {};
 
-PacienteConCovid19(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido) {
+PacienteConCovid19::PacienteConCovid19(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido) {
     this->diaDeContagio = diaDeContagio;
     this->mesDeContagio = mesDeContagio;
     this->edad = edad;
@@ -15,36 +15,34 @@ PacienteConCovid19(int diaDeContagio, int mesDeContagio, int edad, string nombre
 
 };
 
-int getDiaDeContagio() { return diaDeContagio; }
+int PacienteConCovid19::getDiaDeContagio() { return diaDeContagio; }
 
-void setDiaDeContadio(int dia) { diaDeContagio = dia; }
+void PacienteConCovid19::setDiaDeContadio(int dia) { diaDeContagio = dia; }
 
-int getEdad() { return edad; }
+int PacienteConCovid19::getEdad() { return edad; }
 
-void setEdad(int edad) { this->edad = edad; }
+void PacienteConCovid19::setEdad(int edad) { this->edad = edad; }
 
-int getMesDeContagio() { return mesDeContagio; }
+int PacienteConCovid19::getMesDeContagio() { return mesDeContagio; }
 
-void setMesDeContadio(int mes) { mesDeContagio = mes; }
+void PacienteConCovid19::setMesDeContadio(int mes) { mesDeContagio = mes; }
 
-string getNombre() { return nombre; }
+string PacienteConCovid19::getNombre() { return nombre; }
 
-void setNombre(string nombre) { this->nombre = nombre; }
+void PacienteConCovid19::setNombre(string nombre) { this->nombre = nombre; }
 
-string getApellido() { return apellido; }
+string PacienteConCovid19::getApellido() { return apellido; }
 
-void setApellido(string Apellido) { apellido = Apellido };
+void PacienteConCovid19::setApellido(string Apellido) { apellido = Apellido; }
 
-string ToString() {
+string PacienteConCovid19::ToString() {
     stringstream s;
     s << "Nombre del paciente: " << getNombre() << " " << getApellido() << endl;
     s << "Edad del Pacienta: " << getEdad() << endl;
     s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << "de este anno" << endl;
 }
 
-~
-
-PacienteConCovid19() {};
+PacienteConCovid19::~PacienteConCovid19() {};
 
 
 
