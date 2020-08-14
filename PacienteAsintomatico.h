@@ -27,9 +27,9 @@ public:
 
     string getEstadoPulmonar();
 
-    void setEstadoPulmonar();
+    void setEstadoPulmonar(string estado);
 
-    const string &getEstadoPulmonar() const;
+
 };
 
 

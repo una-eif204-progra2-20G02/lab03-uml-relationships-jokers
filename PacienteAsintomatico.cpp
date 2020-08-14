@@ -20,15 +20,17 @@ PacienteAsintomatico::PacienteAsintomatico(int diaDeContagio, int mesDeContagio,
 
 }
 
+string PacienteAsintomatico::getEstadoPulmonar() { return estadoPulmonar; }
+
+void PacienteAsintomatico::setEstadoPulmonar(string estado) { estadoPulmonar = estado; }
+
 string PacienteAsintomatico::ToString() {
     stringstream s;
     s << "Nombre del paciente: " << getNombre() << " " << getApellido() << endl;
     s << "Edad del Pacienta: " << getEdad() << endl;
     s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << "de este anno" << endl;
+    s << "Hospital: " << getHospital() << endl;
     s << "Estado Pulmonar: " << getEstadoPulmonar() << endl;
     return s.str();
 }
 
-string PacienteAsintomatico::getEstadoPulmonar() {
-    return estadoPulmonar;
-}
