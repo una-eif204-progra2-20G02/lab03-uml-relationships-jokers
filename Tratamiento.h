@@ -8,7 +8,7 @@ using namespace std;
 class Tratamiento {
 private:
     int diasDeTratamiento;
-    vector<Medicamento *> *MedicamentoLista;
+    vector<Medicamento> MedicamentoLista;
 public:
     Tratamiento();
 
@@ -16,7 +16,7 @@ public:
 
     void setDiasDeTratamiento(int dias);
 
-    void ingresarAlFinal(Medicamento *medicina);
+    void ingresarAlFinal(Medicamento medicina);
 
     string toString();
     ~Tratamiento();
