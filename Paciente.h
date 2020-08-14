@@ -8,6 +8,7 @@
 #include <iostream>
 #include <sstream>
 
+#include "Tratamiento.h"
 using namespace std;
 
 class PacienteConCovid19 {
@@ -17,10 +18,15 @@ private:
     int edad;
     string nombre;
     string apellido;
+    string hospital;
 public:
     PacienteConCovid19();
 
-    PacienteConCovid19(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido);
+    PacienteConCovid19(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido, string hospital);
+
+    string getHospital();
+
+    void setHospital(string hospi);
 
     int getDiaDeContagio();
 
@@ -28,11 +34,11 @@ public:
 
     int getMesDeContagio();
 
+    void setMesDeContagio(int mes);
+
     int getEdad();
 
     void setEdad(int edad);
-
-    void setMesDeContadio(int mes);
 
     string getNombre();
 
@@ -42,7 +48,7 @@ public:
 
     void setApellido(string Apellido);
 
-    string ToString();
+    virtual string ToString() = 0;
 
     ~PacienteConCovid19();
 
