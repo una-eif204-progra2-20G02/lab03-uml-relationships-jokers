@@ -26,6 +26,9 @@ public:
     void setNombre(string nombre);
     string getApellido();
     void setApellido(string Apellido);
+
+    string ToString();
+
     ~PacienteConCovid19();
 
 
