@@ -5,7 +5,8 @@
 #include "Medicamento.h"
 
 
-Medicamento::Medicamento(const string nombreMedicamento, const double dosis, const int precio, const double nivelEfectividad, const int annioVencimiento)
+Medicamento::Medicamento(string nombreMedicamento, double dosis, int precio, double nivelEfectividad,
+                         int annioVencimiento)
 {
     this->nombreMedicamento=nombreMedicamento;
     this->dosis=dosis;
@@ -14,31 +15,29 @@ Medicamento::Medicamento(const string nombreMedicamento, const double dosis, con
     this->annioVencimiento=annioVencimiento;
 }
 
-Medicamento::~Medicamento() {
+Medicamento::~Medicamento() {}
 
-}
-
-const string &Medicamento::getNombreMedicamento() const {
+string Medicamento::getNombreMedicamento() {
     return nombreMedicamento;
 }
 
-double Medicamento::getDosis() const {
+double Medicamento::getDosis() {
     return dosis;
 }
 
-int Medicamento::getPrecio() const {
+int Medicamento::getPrecio() {
     return precio;
 }
 
-double Medicamento::getNivelEfectividad() const {
+double Medicamento::getNivelEfectividad() {
     return nivelEfectividad;
 }
 
-int Medicamento::getAnnioVencimiento() const {
+int Medicamento::getAnnioVencimiento() {
     return annioVencimiento;
 }
 
-void Medicamento::setNombreMedicamento(const string &nombreMedicamento) {
+void Medicamento::setNombreMedicamento(string nombreMedicamento) {
     Medicamento::nombreMedicamento = nombreMedicamento;
 }
 
