@@ -19,6 +19,7 @@ private:
     string nombre;
     string apellido;
     string hospital;
+    Tratamiento *tratamiento;
 public:
     PacienteConCovid19();
 
@@ -48,6 +49,9 @@ public:
 
     void setApellido(string Apellido);
 
+    string getMedicamentosLista() {
+        return tratamiento->toString();
+    }
     virtual string ToString() = 0;
 
     ~PacienteConCovid19();

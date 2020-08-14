@@ -9,11 +9,14 @@
 #include <sstream>
 #include "Paciente.h"
 
+
 using namespace std;
 
 class PacienteAsintomatico : public PacienteConCovid19 {
 private:
     string estadoPulmonar;
+
+
 public:
     PacienteAsintomatico();
 

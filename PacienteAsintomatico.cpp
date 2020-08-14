@@ -2,7 +2,9 @@
 #include "PacienteAsintomatico.h"
 #include "Paciente.h"
 
-PacienteAsintomatico::PacienteAsintomatico() {}
+PacienteAsintomatico::PacienteAsintomatico() {
+
+}
 
 
 PacienteAsintomatico::PacienteAsintomatico(int diaDeContagio, int mesDeContagio, int edad, string nombre,
@@ -17,6 +19,7 @@ PacienteAsintomatico::PacienteAsintomatico(int diaDeContagio, int mesDeContagio,
     setApellido(apellido);
     setHospital(hospital);
     this->estadoPulmonar = estadoPulmonar;
+
 
 }
 

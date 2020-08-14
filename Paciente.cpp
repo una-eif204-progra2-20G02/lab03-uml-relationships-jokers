@@ -4,7 +4,9 @@
 
 #include "Paciente.h"
 
-PacienteConCovid19::PacienteConCovid19() {};
+PacienteConCovid19::PacienteConCovid19() {
+    tratamiento = new Tratamiento();
+};
 
 PacienteConCovid19::PacienteConCovid19(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,
                                        string hospital) {
@@ -14,6 +16,7 @@ PacienteConCovid19::PacienteConCovid19(int diaDeContagio, int mesDeContagio, int
     this->nombre = nombre;
     this->apellido = apellido;
     this->hospital = hospital;
+    tratamiento = new Tratamiento();
 
 };
 
@@ -45,13 +48,7 @@ void PacienteConCovid19::setHospital(string hospi) {
     hospital = hospi;
 }
 
-string PacienteConCovid19::ToString() {
-    stringstream s;
-    s << "Nombre del paciente: " << getNombre() << " " << getApellido() << endl;
-    s << "Edad del Pacienta: " << getEdad() << endl;
-    s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << "de este anno" << endl;
-    return s.str();
-}
+string PacienteConCovid19::ToString() { ; }
 
 PacienteConCovid19::~PacienteConCovid19() {}
 

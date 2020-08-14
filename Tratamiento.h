@@ -1,29 +1,23 @@
+
 #include<iostream>
 #include<sstream>
 #include "Medicamento.h"
 #include <vector>
-
 using namespace std;
 
 class Tratamiento {
 private:
-    vector<Medicamento> *MedicamentoLista;
     int diasDeTratamiento;
+    vector<Medicamento *> *MedicamentoLista;
 public:
     Tratamiento();
 
-    Tratamiento(int diasDeTratamiengo);
-
-    void ingresarAlFinal(Medicamento);
+    Tratamiento(int dias);
 
     void setDiasDeTratamiento(int dias);
 
-    int getDiasDeTratamiento();
+    void ingresarAlFinal(Medicamento *medicina);
 
     string toString();
-
     ~Tratamiento();
 };
-
-
-

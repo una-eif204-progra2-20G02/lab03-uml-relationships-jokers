@@ -5,14 +5,16 @@
 #include "PacienteConSintomas.h"
 #include "Paciente.h"
 
-PacienteConSintomas::PacienteConSintomas() {}
+PacienteConSintomas::PacienteConSintomas() {
+
+}
 
 
-PacienteConSintomas::PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad, string nombre,
-                                         string apellido, string hospital,
-                                         string sintomas) : PacienteConCovid19(diaDeContagio, mesDeContagio,
-                                                                               edad, nombre, apellido,
-                                                                               hospital) {
+PacienteConSintomas::PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,
+                                         string hospital, string sintomas) : PacienteConCovid19(diaDeContagio,
+                                                                                                mesDeContagio, edad,
+                                                                                                nombre, apellido,
+                                                                                                hospital) {
     this->setDiaDeContadio(diaDeContagio);
     this->setMesDeContagio(mesDeContagio);
     setEdad(edad);
@@ -20,7 +22,6 @@ PacienteConSintomas::PacienteConSintomas(int diaDeContagio, int mesDeContagio, i
     setApellido(apellido);
     setHospital(hospital);
     this->sintomas = sintomas;
-
 }
 
 string PacienteConSintomas::getSintomas() { return sintomas; }
@@ -34,6 +35,7 @@ string PacienteConSintomas::ToString() {
     s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << "de este anno" << endl;
     s << "Hospital: " << getHospital() << endl;
     s << "Sintomas: " << getSintomas() << endl;
+    s << "Plan de Alimentacion: " << endl;
     return s.str();
 }
 
