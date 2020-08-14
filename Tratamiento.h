@@ -1,14 +1,29 @@
-//
-// Created by Sebastian on 8/14/2020.
-//
+#include<iostream>
+#include<sstream>
+#include "Medicamento.h"
+#include <vector>
 
-#ifndef BASIC_00_EXAMPLE_TRATAMIENTO_H
-#define BASIC_00_EXAMPLE_TRATAMIENTO_H
-
+using namespace std;
 
 class Tratamiento {
+private:
+    vector<Medicamento> *MedicamentoLista;
+    int diasDeTratamiento;
+public:
+    Tratamiento();
 
+    Tratamiento(int diasDeTratamiengo);
+
+    void ingresarAlFinal(Medicamento);
+
+    void setDiasDeTratamiento(int dias);
+
+    int getDiasDeTratamiento();
+
+    string toString();
+
+    ~Tratamiento();
 };
 
 
-#endif //BASIC_00_EXAMPLE_TRATAMIENTO_H
+

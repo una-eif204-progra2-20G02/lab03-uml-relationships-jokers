@@ -4,7 +4,6 @@
 
 #include "Medicamento.h"
 
-
 Medicamento::Medicamento(string nombreMedicamento, double dosis, int precio, double nivelEfectividad,
                          int annioVencimiento)
 {
