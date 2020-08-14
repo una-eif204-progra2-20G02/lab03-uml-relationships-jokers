@@ -48,7 +48,6 @@ void PacienteConCovid19::setHospital(string hospi) {
     hospital = hospi;
 }
 
-string PacienteConCovid19::ToString() { ; }
 
 PacienteConCovid19::~PacienteConCovid19() {}
 
