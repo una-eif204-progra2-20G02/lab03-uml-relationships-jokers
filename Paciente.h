@@ -12,7 +12,7 @@
 using namespace std;
 
 class Paciente{
-private:
+protected:
     int diaDeContagio;
     int mesDeContagio;
     int edad;
