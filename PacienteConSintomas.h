@@ -16,7 +16,7 @@ private:
 public:
     PacienteConSintomas();
 
-    PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad,std::string nombre,std::string apellido,std::string hospital,std::string sintomas);
+    PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad,std::string nombre,std::string apellido,std::string hospital,std::string sintomas,Tratamiento *tratamiento);
 
     std::string getSintomas();
 

@@ -20,7 +20,7 @@ private:
 public:
     PacienteAsintomatico();
 
-    PacienteAsintomatico(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,string hospital,string estadoPulmonar);
+    PacienteAsintomatico(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,string hospital,string estadoPulmonar,Tratamiento *tratamiento);
 
     string ToString() override;
 

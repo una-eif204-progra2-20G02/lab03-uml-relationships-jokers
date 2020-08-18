@@ -7,7 +7,7 @@ PacienteAsintomatico::PacienteAsintomatico() {
 }
 
 
-PacienteAsintomatico::PacienteAsintomatico(int diaDeContagio, int mesDeContagio, int edad, string nombre,string apellido, string hospital,string estadoPulmonar) : Paciente(diaDeContagio, mesDeContagio,edad, nombre, apellido,hospital) {
+PacienteAsintomatico::PacienteAsintomatico(int diaDeContagio, int mesDeContagio, int edad, string nombre,string apellido, string hospital,string estadoPulmonar,Tratamiento *tratamiento) : Paciente(diaDeContagio, mesDeContagio,edad, nombre, apellido,hospital,tratamiento) {
     this->setDiaDeContadio(diaDeContagio);
     this->setMesDeContagio(mesDeContagio);
     setEdad(edad);
@@ -15,6 +15,7 @@ PacienteAsintomatico::PacienteAsintomatico(int diaDeContagio, int mesDeContagio,
     setApellido(apellido);
     setHospital(hospital);
     this->estadoPulmonar = estadoPulmonar;
+
 
 
 }
@@ -30,7 +31,7 @@ string PacienteAsintomatico::ToString() {
     s << "Fecha de contagio: El " << getDiaDeContagio() << " " << getMesDeContagio() << " 2020" << endl;
     s << "Hospital: " << getHospital() << endl;
     s << "Estado Pulmonar: " << getEstadoPulmonar() << endl;
-    //s << "Plan de tratamiento: "<<tratamientoLista()<<endl;
+    s << "Plan de tratamiento: "<<tratamiento->toString()<<endl;
     return s.str();
 }
 

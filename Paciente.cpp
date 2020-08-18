@@ -8,13 +8,14 @@ Paciente::Paciente() {
 
 }
 
-Paciente::Paciente(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,string hospital){
+Paciente::Paciente(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,string hospital,Tratamiento *tratamiento){
     this->diaDeContagio = diaDeContagio;
     this->mesDeContagio = mesDeContagio;
     this->edad = edad;
     this->nombre = nombre;
     this->apellido = apellido;
     this->hospital = hospital;
+    this->tratamiento = tratamiento;
 
 
 }
@@ -54,9 +55,5 @@ void Paciente::setHospital(string hospi) {
 Paciente::~Paciente() {}
 
 
-void Paciente::agregarTratamiento(Tratamiento tratamiento){
-    tratamientoLista.push_back(tratamiento);
-
-}
 
 

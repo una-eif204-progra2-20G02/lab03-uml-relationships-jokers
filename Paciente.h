@@ -19,11 +19,11 @@ protected:
     string nombre;
     string apellido;
     string hospital;
-    vector<Tratamiento> tratamientoLista;
+    Tratamiento *tratamiento;
 public:
     Paciente();
 
-    Paciente(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido, string hospital);
+    Paciente(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido, string hospital,Tratamiento *tratamiento);
 
     string getHospital();
 
@@ -53,7 +53,7 @@ public:
 
     virtual string ToString() = 0;
 
-    void agregarTratamiento(Tratamiento tratamiento);
+   // void agregarTratamiento(Tratamiento tratamiento);
 
     ~Paciente();
 

@@ -10,7 +10,7 @@ PacienteConSintomas::PacienteConSintomas() {
 }
 
 
-PacienteConSintomas::PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad,std::string nombre,std::string apellido,std::string hospital,std::string sintomas) : Paciente(diaDeContagio,mesDeContagio, edad,nombre, apellido,hospital) {
+PacienteConSintomas::PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad,std::string nombre,std::string apellido,std::string hospital,std::string sintomas,Tratamiento *tratamiento) : Paciente(diaDeContagio,mesDeContagio, edad,nombre, apellido,hospital,tratamiento) {
     this->setDiaDeContadio(diaDeContagio);
     this->setMesDeContagio(mesDeContagio);
     setEdad(edad);
@@ -31,7 +31,7 @@ string PacienteConSintomas::ToString() {
     s << "Fecha de contagio: El " << getDiaDeContagio() << " " << getMesDeContagio() << " 2020" << endl;
     s << "Hospital: " << getHospital() << endl;
     s << "Sintomas: " << getSintomas() << endl;
-    //s << "Plan de tratamiento: " << ->toString()<< endl;
+    s << "Plan de tratamiento: " << tratamiento->toString()<< endl;
     return s.str();
 }
 
