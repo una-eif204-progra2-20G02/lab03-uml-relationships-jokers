@@ -4,8 +4,7 @@
 
 #include "Medicamento.h"
 
-Medicamento::Medicamento(string nombreMedicamento, double dosis, int precio, double nivelEfectividad,
-                         int annioVencimiento)
+Medicamento::Medicamento(string nombreMedicamento, double dosis, int precio, double nivelEfectividad,int annioVencimiento)
 {
     this->nombreMedicamento=nombreMedicamento;
     this->dosis=dosis;
@@ -14,7 +13,7 @@ Medicamento::Medicamento(string nombreMedicamento, double dosis, int precio, dou
     this->annioVencimiento=annioVencimiento;
 }
 
-Medicamento::~Medicamento() {}
+Medicamento::~Medicamento(){}
 
 string Medicamento::getNombreMedicamento() {
     return nombreMedicamento;
@@ -62,6 +61,6 @@ string Medicamento::toString() {
     s<<"La dosis que debe de ser ingerida es: "<<getDosis()<<endl;
     s<<"Precio del Medicamento: "<<getPrecio()<<endl;
     s<<"Tiene un nivel de efectividad de: "<<getNivelEfectividad()<<endl;
-    s<<"Fecha de vencimiento: "<<getAnnioVencimiento()<<endl;
+    s<<"Año de vencimiento: "<<getAnnioVencimiento()<<endl;
     return s.str();
 }

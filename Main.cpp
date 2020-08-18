@@ -20,6 +20,7 @@ int main() {
     PlanGerson->ingresarAlFinal(Vitaminas);
     PlanGerson->ingresarAlFinal(Panadol);
     cout << Sebas->ToString() << endl;
+    cout << PlanGerson->toString()<<endl;
     cout << Gerson->ToString() << endl;
 
     return 0;

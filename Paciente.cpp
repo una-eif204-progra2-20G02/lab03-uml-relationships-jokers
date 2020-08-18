@@ -4,11 +4,11 @@
 
 #include "Paciente.h"
 
-PacienteConCovid19::PacienteConCovid19() {
+Paciente::Paciente() {
     tratamiento = new Tratamiento();
 }
 
-PacienteConCovid19::PacienteConCovid19(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,
+Paciente::Paciente(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,
                                        string hospital) {
     this->diaDeContagio = diaDeContagio;
     this->mesDeContagio = mesDeContagio;
@@ -20,40 +20,44 @@ PacienteConCovid19::PacienteConCovid19(int diaDeContagio, int mesDeContagio, int
 
 }
 
-int PacienteConCovid19::getDiaDeContagio() { return diaDeContagio; }
+int Paciente::getDiaDeContagio() { return diaDeContagio; }
 
-void PacienteConCovid19::setDiaDeContadio(int dia) { diaDeContagio = dia; }
+void Paciente::setDiaDeContadio(int dia) { diaDeContagio = dia; }
 
-int PacienteConCovid19::getEdad() { return edad; }
+int Paciente::getEdad() { return edad; }
 
-void PacienteConCovid19::setEdad(int edad) { this->edad = edad; }
+void Paciente::setEdad(int edad) { this->edad = edad; }
 
-int PacienteConCovid19::getMesDeContagio() { return mesDeContagio; }
+int Paciente::getMesDeContagio() { return mesDeContagio; }
 
-string PacienteConCovid19::getMedicamentosLista() {
+string Paciente::getMedicamentosLista() {
+
     return tratamiento->toString();
 }
 
-void PacienteConCovid19::setMesDeContagio(int mes) { mesDeContagio = mes; }
+void Paciente::setMesDeContagio(int mes) {
+    mesDeContagio = mes; }
 
-string PacienteConCovid19::getNombre() { return nombre; }
+string Paciente::getNombre() {
+    return nombre; }
 
-void PacienteConCovid19::setNombre(string nombre) { this->nombre = nombre; }
+void Paciente::setNombre(string nombre) {
+    this->nombre = nombre; }
 
-string PacienteConCovid19::getApellido() { return apellido; }
+string Paciente::getApellido() { return apellido; }
 
-void PacienteConCovid19::setApellido(string Apellido) { apellido = Apellido; }
+void Paciente::setApellido(string Apellido) {
+   this-> apellido = Apellido; }
 
-string PacienteConCovid19::getHospital() {
+string Paciente::getHospital() {
     return hospital;
 }
 
-void PacienteConCovid19::setHospital(string hospi) {
-    hospital = hospi;
+void Paciente::setHospital(string hospi) {
+    this->hospital = hospi;
 }
 
-
-PacienteConCovid19::~PacienteConCovid19() {}
+Paciente::~Paciente() {}
 
 
 

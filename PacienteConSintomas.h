@@ -9,23 +9,20 @@
 #include <sstream>
 #include "Paciente.h"
 
-using namespace std;
 
-class PacienteConSintomas : public PacienteConCovid19 {
+class PacienteConSintomas : public Paciente{
 private:
-    string sintomas;
+    std::string sintomas;
 public:
     PacienteConSintomas();
 
-    PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,
-                        string hospital,
-                        string sintomas);
+    PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad,std::string nombre,std::string apellido,std::string hospital,std::string sintomas);
 
-    string getSintomas();
+    std::string getSintomas();
 
-    void setSintomas(string sinto);
+    void setSintomas(std::string sinto);
 
-    string ToString();
+    std::string ToString() override;
 
     ~PacienteConSintomas();
 

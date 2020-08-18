@@ -12,7 +12,7 @@
 
 using namespace std;
 
-class PacienteAsintomatico : public PacienteConCovid19 {
+class PacienteAsintomatico : public Paciente{
 private:
     string estadoPulmonar;
 
@@ -20,11 +20,9 @@ private:
 public:
     PacienteAsintomatico();
 
-    PacienteAsintomatico(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,
-                         string hospital,
-                         string estadoPulmonar);
+    PacienteAsintomatico(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,string hospital,string estadoPulmonar);
 
-    string ToString();
+    string ToString() override;
 
     ~PacienteAsintomatico();
 

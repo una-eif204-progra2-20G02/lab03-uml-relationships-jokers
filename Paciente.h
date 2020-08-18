@@ -11,7 +11,7 @@
 #include "Tratamiento.h"
 using namespace std;
 
-class PacienteConCovid19 {
+class Paciente{
 private:
     int diaDeContagio;
     int mesDeContagio;
@@ -21,9 +21,9 @@ private:
     string hospital;
     Tratamiento *tratamiento;
 public:
-    PacienteConCovid19();
+    Paciente();
 
-    PacienteConCovid19(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido, string hospital);
+    Paciente(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido, string hospital);
 
     string getHospital();
 
@@ -53,7 +53,7 @@ public:
 
     virtual string ToString() = 0;
 
-    ~PacienteConCovid19();
+    ~Paciente();
 
 
 };

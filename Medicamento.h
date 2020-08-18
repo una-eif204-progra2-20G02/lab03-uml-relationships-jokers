@@ -19,7 +19,6 @@ private:
     double nivelEfectividad;
     int annioVencimiento;
 
-
 public:
 
     Medicamento(string nombreMedicamento, double dosis, int precio, double nivelEfectividad, int annioVencimiento);

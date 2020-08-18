@@ -7,11 +7,7 @@ PacienteAsintomatico::PacienteAsintomatico() {
 }
 
 
-PacienteAsintomatico::PacienteAsintomatico(int diaDeContagio, int mesDeContagio, int edad, string nombre,
-                                           string apellido, string hospital,
-                                           string estadoPulmonar) : PacienteConCovid19(diaDeContagio, mesDeContagio,
-                                                                                       edad, nombre, apellido,
-                                                                                       hospital) {
+PacienteAsintomatico::PacienteAsintomatico(int diaDeContagio, int mesDeContagio, int edad, string nombre,string apellido, string hospital,string estadoPulmonar) : Paciente(diaDeContagio, mesDeContagio,edad, nombre, apellido,hospital) {
     this->setDiaDeContadio(diaDeContagio);
     this->setMesDeContagio(mesDeContagio);
     setEdad(edad);

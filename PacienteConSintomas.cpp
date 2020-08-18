@@ -10,11 +10,7 @@ PacienteConSintomas::PacienteConSintomas() {
 }
 
 
-PacienteConSintomas::PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,
-                                         string hospital, string sintomas) : PacienteConCovid19(diaDeContagio,
-                                                                                                mesDeContagio, edad,
-                                                                                                nombre, apellido,
-                                                                                                hospital) {
+PacienteConSintomas::PacienteConSintomas(int diaDeContagio, int mesDeContagio, int edad,std::string nombre,std::string apellido,std::string hospital,std::string sintomas) : Paciente(diaDeContagio,mesDeContagio, edad,nombre, apellido,hospital) {
     this->setDiaDeContadio(diaDeContagio);
     this->setMesDeContagio(mesDeContagio);
     setEdad(edad);
@@ -31,8 +27,8 @@ void PacienteConSintomas::setSintomas(string sinto) { sintomas = sinto; }
 string PacienteConSintomas::ToString() {
     stringstream s;
     s << "Nombre del paciente: " << getNombre() << " " << getApellido() << endl;
-    s << "Edad del Pacienta: " << getEdad() << endl;
-    s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << " de este anno" << endl;
+    s << "Edad del Paciente: " << getEdad() << endl;
+    s << "Fecha de contagio: El " << getDiaDeContagio() << "/" << getMesDeContagio() << " 2020" << endl;
     s << "Hospital: " << getHospital() << endl;
     s << "Sintomas: " << getSintomas() << endl;
     s << "Plan de tratamiento: " << getMedicamentosLista() << endl;
