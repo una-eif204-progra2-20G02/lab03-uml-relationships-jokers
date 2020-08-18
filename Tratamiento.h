@@ -8,7 +8,7 @@ using namespace std;
 class Tratamiento {
 private:
     int diasDeTratamiento;
-    vector<Medicamento> MedicamentoLista;
+    vector<Medicamento> medicamentoLista;
 public:
     Tratamiento();
 

@@ -18,23 +18,25 @@ void Tratamiento::setDiasDeTratamiento(int dias) {
 }
 
 void Tratamiento::ingresarAlFinal(Medicamento medicina) {
-    MedicamentoLista.push_back(medicina);
+    medicamentoLista.push_back(medicina);
 }
 
 int Tratamiento::getTamanno() {
-    return MedicamentoLista.size();
+    return medicamentoLista.size();
 }
 
 string Tratamiento::toString() {
     stringstream s;
     int i;
     for (auto i = 0; i < getTamanno(); i++) {
-        s << MedicamentoLista.at(i).toString() << endl;
+        s << medicamentoLista.at(i).toString() << endl;
     }
     return s.str();
 }
 
-Tratamiento::~Tratamiento() {}
+Tratamiento::~Tratamiento() {
+    medicamentoLista.clear();
+}
 
 
 #endif //BASIC_00_EXAMPLE_TRATAMIENTO_H

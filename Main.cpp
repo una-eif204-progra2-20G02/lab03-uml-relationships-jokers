@@ -16,10 +16,12 @@ int main() {
     planSebas->ingresarAlFinal(acetaminofen);
     planGerson->ingresarAlFinal(vitaminas);
     planGerson->ingresarAlFinal(panadol);
-    PacienteAsintomatico *Sebas = new PacienteAsintomatico(31, 05, 20, "Sebastian", "Cambronero", "Mexico","Excelente",planSebas);
-    PacienteAsintomatico *Gerson = new PacienteAsintomatico(14, 11, 20, "Gerson", "Hernandez", "Mexico", "Muy Malo",planGerson);
-    cout << Sebas->ToString() << endl;
-    cout << Gerson->ToString() << endl;
+    PacienteAsintomatico *sebas = new PacienteAsintomatico(31, 05, 20, "Sebastian", "Cambronero", "Mexico", "Excelente",
+                                                           planSebas);
+    PacienteAsintomatico *gerson = new PacienteAsintomatico(14, 11, 20, "Gerson", "Hernandez", "Mexico", "Muy Malo",
+                                                            planGerson);
+    cout << sebas->ToString() << endl;
+    cout << gerson->ToString() << endl;
 
     return 0;
 }
