@@ -5,18 +5,17 @@
 #include "Paciente.h"
 
 Paciente::Paciente() {
-    tratamiento = new Tratamiento();
+
 }
 
-Paciente::Paciente(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,
-                                       string hospital) {
+Paciente::Paciente(int diaDeContagio, int mesDeContagio, int edad, string nombre, string apellido,string hospital){
     this->diaDeContagio = diaDeContagio;
     this->mesDeContagio = mesDeContagio;
     this->edad = edad;
     this->nombre = nombre;
     this->apellido = apellido;
     this->hospital = hospital;
-    tratamiento = new Tratamiento();
+
 
 }
 
@@ -29,11 +28,6 @@ int Paciente::getEdad() { return edad; }
 void Paciente::setEdad(int edad) { this->edad = edad; }
 
 int Paciente::getMesDeContagio() { return mesDeContagio; }
-
-string Paciente::getMedicamentosLista() {
-
-    return tratamiento->toString();
-}
 
 void Paciente::setMesDeContagio(int mes) {
     mesDeContagio = mes; }
@@ -60,6 +54,9 @@ void Paciente::setHospital(string hospi) {
 Paciente::~Paciente() {}
 
 
+void Paciente::agregarTratamiento(Tratamiento tratamiento){
+    tratamientoLista.push_back(tratamiento);
 
+}
 
 

@@ -19,7 +19,7 @@ protected:
     string nombre;
     string apellido;
     string hospital;
-    Tratamiento *tratamiento;
+    vector<Tratamiento> tratamientoLista;
 public:
     Paciente();
 
@@ -52,6 +52,8 @@ public:
     string getMedicamentosLista();
 
     virtual string ToString() = 0;
+
+    void agregarTratamiento(Tratamiento tratamiento);
 
     ~Paciente();
 
